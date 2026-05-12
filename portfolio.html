@@ -20,6 +20,7 @@
             <li><a href="#hobbies">Hobbies</a></li>
             <li><a href="#habilidades">Habilidades</a></li>
             <li><a href="#proyectos">Proyectos futuros</a></li>
+            <li><a href="#estudios">Estudios</a></li>
             <li><a href="#contacto">Contacto</a></li>
             <li><a href="preguntas&sugerencias.html">Enlace al formulario</a></li>
         </ul>
@@ -72,6 +73,17 @@
                     <p>Me interesa crear un bot que pueda automatizar tareas en diferentes aplicaciones</p>
                 </article>
             </div>
+        </section>
+        <section id="estudios">
+            <h2>Estudios</h2>
+            <form action="#" method="post">
+                <label for="titulo">Título: </label>
+                <input type="text" name="titulo" id="titulo" required><br><br>
+                <label for="descripcion">Descripción: </label>
+                <textarea name="descripcion" id="descripcion" required></textarea><br><br>
+                <button type="button" onclick="agregarEstudio()">Añadir estudio</button>
+            </form>
+            <div class="estudios" id="div-estudios"></div>
         </section>
         <section id="contacto">
             <h2>Contacto</h2>

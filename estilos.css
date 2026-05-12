@@ -72,6 +72,18 @@ section {
     background-color: #c9c9c9;
 }
 
+.estudios {
+    display: flex;
+    gap: 10px;
+}
+
+.estu {
+    text-align: center;
+    flex: 1;
+    padding: 10px;
+    background-color: #c9c9c9;
+}
+
 footer {
     background-color: #fa4e50;
     color: white;
@@ -106,6 +118,10 @@ input:focus, textarea:focus, select:focus {
 }
 
 .oscuro .proy {
+    background-color: #4b4b4b;
+}
+
+.oscuro .estu {
     background-color: #4b4b4b;
 }
 
