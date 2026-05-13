@@ -13,7 +13,16 @@ if (localStorage.getItem("modo") == "oscuro"){
     document.body.classList.add("oscuro");
 }
 
-const estudios = [];
+const estudios = [
+    {
+        titulo: "Bachillerato (modalidad Ciencias y Tecnología)",
+        descripcion: "2023 - 2025. IES Peñalba (Moral de Calatrava)"
+    },
+    {
+        titulo: "Ciclo Formativo de Grado Superior de DAM",
+        descripcion: "2025 - Actualidad. IES Gregorio Prieto (Valdepeñas)"
+    }
+];
 const div = document.getElementById("div-estudios");
 function agregarEstudio() {
     const tituloo = document.getElementById("titulo").value;

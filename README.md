@@ -1,2 +1,36 @@
-# practicas.1DAM.Cojali
-Repositorio en que se irán subiendo las prácticas que vayamos realizando en el periodo de formación en la empresa Cojali
+# Portfolio Personal - Juan Chicharro - Prácticas 1DAM Cojali
+
+Proyecto realizado durante las prácticas de 1º DAM.
+
+## Contenido
+
+- Información personal
+- Hobbies
+- Habilidades
+- Proyectos futuros
+- Estudios
+- Contacto
+- Preguntas y sugerencias
+- Modo oscuro
+- Diseño responsive
+
+---
+
+## Tecnologías utilizadas
+
+- HTML5
+- CSS
+- JavaScript
+
+---
+
+## Estructura del proyecto
+
+```bash
+📁 portfolio
+ ├── estilos.css
+ ├── miFoto.jpg
+ ├── portfolio.html
+ ├── preguntas&sugerencias.html
+ ├── README.md
+ └── script.js
