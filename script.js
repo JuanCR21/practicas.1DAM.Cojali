@@ -48,3 +48,38 @@ function mostrarEstudio() {
         div.appendChild(artic);
     });
 }
+
+const perfil = document.getElementById("perfil");
+const repositorios = document.getElementById("repositorios");
+function buscarGitHub() {
+    const usuario = document.getElementById("usuario").value;
+    perfil.innerHTML = "<p>Cargando perfil...</p>";
+    repositorios.innerHTML = "<p>Cargando repositorios...</p>";
+    fetch(`https://api.github.com/users/${usuario}`)
+        .then(respuesta => respuesta.json())
+        .then(datos => {
+            perfil.innerHTML = `
+                                    <article class="perfil-github">
+                                        <img src="${datos.avatar_url}">
+                                        <h3>${datos.login}</h3>
+                                        <p>${datos.bio ? datos.bio : "Sin biografía"}</p>
+                                    </article>
+                                `;
+        });
+    fetch(`https://api.github.com/users/${usuario}/repos`)
+        .then(respuesta => respuesta.json())
+        .then(datos => {
+            repositorios.innerHTML = "";
+            datos.forEach(repositorio => {
+                var artic = document.createElement("article");
+                artic.classList.add("repo");
+                artic.innerHTML = `
+                                        <h3>${repositorio.name}</h3>
+                                        <p>${repositorio.description ? repositorio.description : "Sin descripción"}</p>
+                                        <a href="${repositorio.html_url}" target="_blank">Visitar repositorio</a>
+                                    `;
+                repositorios.appendChild(artic);
+            });
+        });
+}
+buscarGitHub();

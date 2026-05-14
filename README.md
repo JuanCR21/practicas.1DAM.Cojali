@@ -10,6 +10,7 @@ Proyecto realizado durante las prácticas de 1º DAM.
 - Proyectos futuros
 - Estudios
 - Contacto
+- Perfil de GitHub
 - Preguntas y sugerencias
 - Modo oscuro
 - Diseño responsive
